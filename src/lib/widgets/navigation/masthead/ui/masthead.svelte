@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ThemeSwitch } from '~ui/theme-switch';
+	import { navItems } from '../lib/nav';
 </script>
 
 <div class="navbar bg-base-100">
@@ -21,14 +22,14 @@
 				>
 			</div>
 			<ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-				<li><a href="/">Homepage</a></li>
-				<li><a href="/">Portfolio</a></li>
-				<li><a href="/">About</a></li>
+				{#each navItems as { label, href }}
+					<a {href}>{label}</a>
+				{/each}
 			</ul>
 		</div>
 	</div>
 	<div class="navbar-center">
-		<a href="/" class="btn btn-ghost text-xl">daisyUI</a>
+		<a href="/" class="btn btn-ghost text-xl">mmoli.xyz</a>
 	</div>
 	<div class="navbar-end">
 		<ThemeSwitch />

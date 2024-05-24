@@ -14,6 +14,7 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			'~ui/*': './src/lib/shared/design-system/ui/*',
+			'~shared/*': './src/lib/shared/*',
 			'~widgets/*': './src/lib/widgets/*'
 		}
 	}
