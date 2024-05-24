@@ -15,6 +15,7 @@ const config = {
 		alias: {
 			'~ui/*': './src/lib/shared/design-system/ui/*',
 			'~shared/*': './src/lib/shared/*',
+			'~entities/*': './src/lib/entities/*',
 			'~widgets/*': './src/lib/widgets/*'
 		}
 	}
