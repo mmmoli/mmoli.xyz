@@ -1,4 +1,4 @@
-import { HomeView } from '~shared/config/routes';
+import { routes } from '~shared/config/routes';
 
 export interface NavItem {
 	label: string;
@@ -8,6 +8,10 @@ export interface NavItem {
 export const navItems: NavItem[] = [
 	{
 		label: 'Home',
-		href: HomeView()
+		href: routes.HomeView()
+	},
+	{
+		label: 'Entrepreneurship Short Courses',
+		href: routes.ShortCoursesView()
 	}
 ];
